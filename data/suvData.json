@@ -1,0 +1,23 @@
+{
+    "models": [
+      {
+        "id": "1",
+        "model": "HRV",
+        "description": "This is an HRV model.",
+        "type": "Compact"
+      },
+      {
+        "id": "2",
+        "model": "CRV",
+        "description": "This is a CRV model.",
+        "type": "Mid-size"
+      },
+      {
+        "id": "3",
+        "model": "RDX",
+        "description": "This is an RDX model.",
+        "type": "Luxury"
+      }
+    ]
+  }
+  
