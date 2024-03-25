@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool SUVs</title>
+  <link rel="stylesheet" href="/css/main.css" />
+
+</head>
+
+<body tabindex="-1">
+  <%- include('partials/navbar',{page: ''}) %>
+  
+    <br />
+  
+    <div class="container mx-auto p-4"">
+  
+  
+      <div class="hero bg-base-200 rounded-lg p-6">
+        <div class="hero-content text-center ">
+          <div class="max-w-md">
+            <h1 class="text-5xl font-bold">Welcome</h1>
+            <p class="py-6">Here you can have some views of different Cool SUVs from Honda.</p>        
+            <a href="/suv/models" class="btn btn-primary">Get Started Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <br />
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div>
+  
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full" src="https://www.honda.ca/-/media/Brands/Honda/Models/HR-V/2024/Trims/Trim-BAP/EX-L-Navi/MSM/Trim_BAP_Carousel_718x402_2023_HRV_EXLNavi_AWD_MSM_1.png?rev=b879c69e52f34445864528c101c2c1c9" alt="HR-V" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">HRV</h2>
+              <p>This new model is realsed from 2022,however it comes as an 2023 Model.</p>
+              <div class="card-actions justify-end">
+                <a href="/suv/models/HRV" class="btn btn-primary">View</a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div>
+  
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full" src="https://www.honda.ca/-/media/Brands/Honda/Models/CR-V/2023/Trims/_Hybrid-Touring/Trim-BAP/MGM/CRV23_TouringHybrid_AWD_MGM_1_718x402.png?rev=4d9439213950439b8175b4be9171e86e" alt="CR-V" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">CRV</h2>
+              <p>Can you rely on a compact crossover SUV to empower your every adventure? With a sporty vehicle that’s Canadian built and Canadian driven, Yes You Can. With domestic and imported parts.</p>
+              <div class="card-actions justify-end">
+                <a href="/suv/models/CRV" class="btn btn-primary">View</a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+        <div>
+  
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full" src="https://www.acura.ca/-/media/Brands/Acura/Models/RDX/2024/Trims/ELITE-A-SPEC/LSM/Trim_BAP_718x402_2024_RDX_EliteASpec_LSM_01.png?rev=6fbf54424bf8484b8de295001aa6b563" alt="RDX" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">RDX</h2>
+              <p>With a luxe interior, our impressive tech, and a 272 hp* turbocharged engine, this brawny RDX trim will make every true driver grin and whisper their two favourite words: “buckle up”.</p>
+              <div class="card-actions justify-end">
+                <a href="/suv/models/RDX" class="btn btn-primary">View</a>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  </body>
+  
+  </html>

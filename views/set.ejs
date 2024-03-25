@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool SUVs</title>
+  <link rel="stylesheet" href="/css/main.css" />
+  <script>
+    document.addEventListener("DOMContentLoaded", async ()=>{
+
+        let res = await fetch("https://quotable.io/random");
+        let data = await res.json();
+
+        document.getElementById("quote").innerHTML = `"${data.content}"<br />- <em>${data.author}</em>`;
+    });
+  </script>
+</head>
+
+
+<body tabindex="-1">
+    <%- include('partials/navbar', {page: ''}) %>
+
+  <div class="container mx-auto mt-8">
+    <div class="hero bg-base-200 p-8">
+     <h1 class="text-3xl font-bold"><%= set.model %> - <%= set.type %></h1>
+     <p>Below, you will find detailed information about the SUV model:</p>
+    </div>
+
+    <div class="mt-4">
+     <p>ID: <%= set.id %></p>
+     <p>Model: <%= set.model %></p>
+     <p>Description: <%= set.description %></p>
+     <p>Type: <%= set.type %></p>
+    </div>
+
+   <div class="mt-4">
+     <p id="quote"></p>
+     
+     <br /><br />
+     <a class="btn btn-primary btn-sm" href="#" onclick="history.back(); return false;">RETURN</a>
+    </div>
+  
+</body>
+
+</html>
