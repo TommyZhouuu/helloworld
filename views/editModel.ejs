@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cool SUVs</title>
+  <link rel="stylesheet" href="/css/main.css" />
+
+</head>
+<body>
+    <%- include('partials/navbar', {page: '' }) %>
+    <h1>Edit Model - <%= model.model %></h1>
+    <form action="/suv/editModel" method="POST">
+        <input type="hidden" name="id" value="<%= model.id %>">
+
+        <label for="model">Model Name:</label>
+        <input type="text" id="model" name="model" required value="<%= model.model %>"><br>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" required value="<%= model.description %>"><br>
+
+        <label for="type">Type:</label>
+        <select id="type" name="type" required>
+            <% ['Compact', 'Mid-size', 'Luxury'].forEach(function(type) { %>
+                <option value="<%= type %>" <%= model.type === type ? 'selected' : '' %>><%= type %></option>
+            <% }); %>
+        </select><br>
+
+        <button type="submit">Update Model</button>
+    </form>
+</body>
+</html>
